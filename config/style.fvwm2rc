@@ -1,0 +1,50 @@
+###############################Style #######################################
+# Window-Decorations
+# small up triangle
+ButtonStyle 2 4 50x35@1 65x65@0 35x65@0 50x35@1
+# small down triangle
+ButtonStyle 4 4 50x65@1 35x35@1 65x35@1 50x65@0
+
+# Inactive windows and default widget fg/bg/sh/hi, regular menu, window borders
+Colorset 1 fg #ffffffffffff, bg #9900991b99fe, hi #d2aad2b6d31a, sh #4f864f94500a, fgsh #820c822382e4, Plain, NoShape
+
+# Active, focused windows, titlebar of WspLocPager, active window borders
+Colorset 2 fg #ffffffffffff, bg #ed00a8007000, hi #f7cbda02c1d5, sh #7f2e5a273c1a, fgsh #c9738ecc5f33, Plain, NoShape
+
+# Hilight menu (main menu selected), Subpanels of front panel selected, mousover baloons
+Colorset 4 fg #ffffffffffff, bg #820c822382e4, hi #d2aad2b6d31a, sh #4f864f94500a, fgsh #4f864f94500a, Plain, NoShape
+
+Style *             Colorset 1, HilightColorset 2, IconTitleColorset 1\
+                    BorderColorset 1, HilightBorderColorset 2
+Style *             Font "Shadow=0 se:xft:HandelGothic BT:size=10"
+Style *             IconFont "Shadow=0 se:xft:HandelGothic BT:size=10"
+Style *             SloppyFocus, MouseFocusClickRaises
+Style *             BorderWidth 5, HandleWidth 5
+Style *             Icon NsCDE/Noicon.xpm
+Style *             TileManualPlacement
+Style *             MinOverlapPlacement, GrabFocusOff, !UsePPosition
+Style *             MWMFunctions,MWMDecor,HintOverride
+Style *             DecorateTransient, StackTransientParent
+Style *             FPGrabFocus,FPGrabFocusTransient, FPReleaseFocusTransient
+Style "Fvwm*"       !Title, !Handles, Sticky, WindowListSkip,
+Style "Fvwm*"       BorderWidth 0,CirculateSkipIcon
+Style "Fvwm Pager"  StaysOnTop
+Style "FvwmPager"   StaysOnTop
+Style "FvwmBanner"  StaysOnTop
+Style "FvwmButtons" !Title, !Handles, Sticky, WindowListSkip
+Style "FvwmButtons" BorderWidth 0, CirculateSkip
+Style "FvwmButtons" Icon toolbox.xpm,ClickToFocus
+Style "*lock"       !Title, !Handles, Sticky, WindowListSkip
+Style "*lock"       TileCascadePlacement
+Style "xbiff"       !Title, Sticky, WindowListSkip,ClickToFocus
+
+
+Style XTerm IconOverride, Icon NsCDE/Fpterm.l.pm, MiniIcon NsCDE/Fpterm.s.pm
+Style URxvt IconOverride, Icon NsCDE/Fpterm.l.pm, MiniIcon NsCDE/Fpterm.s.pm
+Style x-terminal-emulator IconOverride, Icon NsCDE/Fpterm.l.pm, MiniIcon NsCDE/Fpterm.s.pm
+Style Signal IconOverride, Icon NsCDE/DtMmsg.l.pm, MiniIcon NsCDE/DtMmsg.s.pm
+Style Brave-browser IconOverride, Icon NsCDE/Dtwebbr.l.pm, MiniIcon NsCDE/Dtwebbr.s.pm
+
+###############################MenuStyle ######################################
+MenuStyle * Font "xft:HandelGothic BT:size=12"
+MenuStyle * Foreground "#ed00a8007000", Background "#820c822382e4", Greyed grey40, PopupDelay 0

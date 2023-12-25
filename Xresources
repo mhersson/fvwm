@@ -1,0 +1,101 @@
+Xcursor.size: 24
+
+!black
+*color0:    #353535
+*color8:    #505354
+!red
+*color1:    #f92672
+*color9:    #ff5995
+!green
+*color2:    #82b414
+*color10:   #b6e354
+!yellow
+*color3:    #fd971f
+*color11:   #feed6c
+!blue
+*color4:    #56c2d6
+*color12:   #8cedff
+!magenta
+*color5:    #9e6ffe
+*color13:   #ac74ff
+!cyan
+*color6:    #465457
+*color14:   #899ca1
+!white
+*color7:    #ccccc6
+*color15:   #f8f8f2
+
+
+! Urxvt
+URxvt.font: xft:UbuntuMono Nerd Font Mono:size=14:antialias=true:hinting=true:autohint=true,\
+            xft:Symbola:size=11.5:antialias=true:hinting=true:autohint=true
+URxvt.letterSpace: -1
+URxvt.geometry: 80x25
+URxvt*background: #68006f008200
+URxvt*foreground: #ffffffffffff
+URxvt*highlightColor: #ffffffffffff
+URxvt*highlightTextColor: #68006f008200
+URxvt*scrollColor: #c600b2d2a87e
+URxvt*troughColor: #a84c97ff8f37
+URxvt*borderColor: #68006f008200
+URxvt*thickness: 12
+URxvt*scrollBar: false
+URxvt*scrollBar_right: true
+URxvt*urgentOnBell: true
+URxvt*visualBell: false
+URxvt*multiClickTime: 750
+URxvt*scrollstyle: rxvt
+URxvt*scrollBar_align: centre
+URxvt*scrollTtyOutput:  false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress:true
+URxvt*saveLines: 32000
+URxvt*internalBorder: 10
+URxvt.cursorBlink: true
+URxvt.perl-ext-common: default,selection-to-clipboard,matcher
+URxvt.clipboard.autocopy: true
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+!XTerm
+Xterm.termName: xterm-256color
+XTerm*internalBorder: 5
+XTerm.vt100.faceName: MesloLGS NF:size=11.5:antialias=true:hinting=true:autohint=true
+XTerm*saveLines: 4500
+XTerm*scrollBar: true
+XTerm*rightScrollBar: true
+XTerm*cursorColor: #ffffffffffff
+XTerm.VT100*pointerColor: #ffffffffffff
+XTerm*Background: #68006f008200
+XTerm*Foreground: #ffffffffffff
+XTerm*borderColor: #248149035383
+XTerm.vt100.background: #68006f008200
+XTerm.vt100.foreground: #ffffffffffff
+XTerm*menubar.background: #49009200a700
+XTerm*menubar.foreground: #ffffffffffff
+XTerm*MenuButton.background: #49009200a700
+XTerm*MenuButton.foreground: #ffffffffffff
+XTerm*SimpleMenu*background: #49009200a700
+XTerm*SimpleMenu*foreground: #ffffffffffff
+XTerm*form.background: #49009200a700
+XTerm*form.foreground: #ffffffffffff
+XTerm*Scrollbar.background: #a84c97ff8f37
+XTerm*Scrollbar.foreground: #e720dee6da78
+XTerm*fullCursor: true
+XTerm*titleBar: false
+XTerm*appkeypadDefault: True
+XTerm.VT100*dynamicColors: On
+XTerm*visualBell: False
+XTerm*VT100*colorMode: on
+XTerm*VT100*underLine: on
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.cursorBlink: true
+XTerm.vt100.scrollTtyOutput: false
+XTerm.vt100.scrollKey:       true
+XTerm.vt100.fastScroll:      true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+XTerm.vt100.translations: #override\n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD)\n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+

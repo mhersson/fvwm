@@ -1,0 +1,36 @@
+####################################Bindings ####################################
+## Syntax:
+# Key Name Context Modifier Command
+
+## Contexts:
+# R = root window
+# I = Icon
+# F = frame corners
+# S = frame sides
+# T = titlebar
+# W = application window
+# 0-9 = window buttons
+# A = Anywhere
+
+## Modifiers:
+# A = Any
+# C = Control
+# S = Shift
+# M = Meta (Alt)
+# N = None
+# 1-5 = mod1-mod5 (man xmodmap)
+
+Key C             W M   CenterWindow
+Key E             A SM  Quit
+Key H             W M   Iconify
+Key M             W M   Maximize 0 100
+Key P             A M   Exec exec rofi -config $FVWM_USERDIR/applications/rofi.conf -show drun
+Key Q             A M   Close
+Key R             A M   Restart
+Key Return        A SM  Exec exec urxvtc
+Key XF86AudioPlay A N   Exec exec playerctl play-pause
+Key XF86AudioNext A N   Exec exec playerctl next
+Key XF86AudioPrev A N   Exec exec playerctl previous
+Key F11           A SM  Exec exec maim -s | xclip -selection clipboard -t image/png
+Key F11           A M   Exec exec maim -s  ~/Downloads/screenshot-"$(date +%Y%m%d%H%M%S)".png
+

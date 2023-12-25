@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+export FVWM_USERDIR="${HOME}/.fvwm"
+
+xrdb -remove && xrdb -cpp /usr/bin/cpp <"${FVWM_USERDIR}"/Xresources
+
+# Input autorepeat
+xset r rate 225 25
+# Disable bell
+xset b off
+
+xsetroot -cursor_name left_ptr
+xsetroot -solid "#252525"
+
+/usr/lib/xdg-desktop-portal-gtk &
+
+feh --bg-tile "${FVWM_USERDIR}"/data/pixmaps/backdrops/Ankh.pm
+
+blueman-applet &
+picom -b --config "${FVWM_USERDIR}"/applications/picom.conf &
+redshift -c "${FVWM_USERDIR}"/applications/redshift.conf &
+dunst -conf "${FVWM_USERDIR}"/applications/dunst.conf &
+conky -c "${FVWM_USERDIR}"/applications/conky.conf &
+
+urxvtd -q -o -f &
+
+exec fvwm -f "${FVWM_USERDIR}"/config/main.fvwm2rc

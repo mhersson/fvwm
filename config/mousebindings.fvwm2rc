@@ -1,0 +1,40 @@
+################################Mousebindings ####################################
+## Syntax:
+# Mouse Button Context Modifier Command
+
+## Contexts:
+# R = root window
+# I = Icon
+# F = frame corners
+# S = frame sides
+# T = titlebar
+# W = application window
+# 0-9 = window buttons
+# A = Anywhere
+
+## Modifiers:
+# A = Any
+# C = Control
+# S = Shift
+# M = Meta (Alt)
+# N = None
+# 1-5 = mod1-mod5 (man xmodmap)
+
+Mouse 1 R     A       Menu WindowOps Nop
+Mouse 2 R     A       WindowList
+Mouse 3 R     A       Menu FVWM Nop
+Mouse 0 1     A       Menu WindowOpsShort Close
+Mouse 0 2     A       Maximize
+Mouse 0 4     A       Iconify
+Mouse 1 2     A       Maximize 100 100
+Mouse 2 2     A       Maximize 0 100
+Mouse 3 2     A       Maximize 100 0
+Mouse 1 FS    A       Resize-or-Raise
+Mouse 1 T     A       Move-or-Raise
+Mouse 2 T     A       WindowShade
+Mouse 3 TSIF  N       RaiseLower
+Mouse 3 T     M       Stick
+Mouse 1 I     A       Iconify
+Mouse 1 W     M       Move-or-Raise
+Mouse 3 W     M       Resize-or-Raise
+

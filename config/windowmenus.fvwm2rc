@@ -1,0 +1,29 @@
+#######################Menus ########################################
+# Window Ops Menu when clicking on the root window
+DestroyMenu WindowOps
+AddToMenu WindowOps  "Window Ops"  Title
++ "$[gt.Move]"          Move
++ "$[gt.Resize]"        Resize
++ "$[gt.Raise]"         Raise
++ "$[gt.Lower]"         Lower
++ "$[gt.(De)Iconify]"   Iconify
++ "$[gt.(Un)Maximize]"  Maximize
++ "$[gt.(Un)Shade]"     WindowShade
++ "$[gt.(Un)Stick]"     Stick
++ ""                    Nop
++ "$[gt.Close]"         Close
++ "$[gt.Destroy]"       Destroy
+
+# Window Ops Menu when clicking on the window decorations like buttons or title bar
+DestroyMenu WindowOpsShort
+AddToMenu WindowOpsShort
++ "$[gt.Move]"          Move
++ "$[gt.Resize]"        Resize
++ "$[gt.(De)Iconify]"   Iconify
++ "$[gt.(Un)Maximize]"  Maximize
++ "$[gt.(Un)Shade]"     WindowShade
++ "$[gt.(Un)Stick]"     Stick
++ ""                    Nop
++ "$[gt.Close]"         Close
++ "$[gt.Destroy]"       Destroy
+

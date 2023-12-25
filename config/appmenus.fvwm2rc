@@ -1,0 +1,53 @@
+#########################################
+DestroyMenu "FVWM"
+AddToMenu "FVWM" "FVWM" Title
++ "XTerm%$[FVWM_USERDIR]/data/icons/xterm.png%" Exec exec xterm
++ "Urxvt%$[FVWM_USERDIR]/data/icons/utilities-terminal.png%" Exec exec urxvtc
++ "Brave%$[FVWM_USERDIR]/data/icons/brave-desktop.png%" Exec exec brave
++ "Emacs%$[FVWM_USERDIR]/data/icons/emacs.png%" Exec exec emacs
++ "Slack%$[FVWM_USERDIR]/data/icons/slack.png%" Exec exec slack
++ "Signal%$[FVWM_USERDIR]/data/icons/signal-desktop.png%" Exec exec signal-desktop
++ "" Nop
++ "Internet%$[FVWM_USERDIR]/data/icons/applications-internet.png%" Popup "Internet"
++ "Development%$[FVWM_USERDIR]/data/icons/applications-development.png%" Popup "Development"
++ "Multimedia%$[FVWM_USERDIR]/data/icons/applications-multimedia.png%" Popup "Multimedia"
++ "System%$[FVWM_USERDIR]/data/icons/applications-system.png%" Popup "System"
++ "" Nop
++ "Exit Fvwm%$[FVWM_USERDIR]/data/icons/exit.png%" Popup Quit-Verify
+
+
+DestroyMenu "Development"
+AddToMenu "Development" "Development" Title
++ "Emacs%$[FVWM_USERDIR]/data/icons/emacs.png%" Exec exec emacs
++ "Neovim%$[FVWM_USERDIR]/data/icons/nvim.png%" Exec exec xterm -e nvim
+
+DestroyMenu "Internet"
+AddToMenu "Internet" "Internet" Title
++ "Brave%$[FVWM_USERDIR]/data/icons/brave-desktop.png%" Exec exec brave
++ "Private Internet Access%$[FVWM_USERDIR]/data/icons/piavpn.png%" Exec exec /opt/piavpn/bin/pia-client
++ "Remote Viewer%$[FVWM_USERDIR]/data/icons/virt-viewer.png%" Exec exec remote-viewer
++ "Signal%$[FVWM_USERDIR]/data/icons/signal-desktop.png%" Exec exec signal-desktop
++ "Slack%$[FVWM_USERDIR]/data/icons/slack.png%" Exec exec slack
+
+
+DestroyMenu "Multimedia"
+AddToMenu "Multimedia" "Multimedia" Title
++ "mpv Media Player%$[FVWM_USERDIR]/data/icons/mpv.png%" Exec exec mpv --player-operation-mode=pseudo-gui --
++ "PulseAudio Volume Control%$[FVWM_USERDIR]/data/icons/multimedia-volume-control.png%" Exec exec pavucontrol
+
+
+DestroyMenu "System"
+AddToMenu "System" "System" Title
++ "Bluetooth Manager%$[FVWM_USERDIR]/data/icons/blueman.png%" Exec exec blueman-manager
++ "Btop++%$[FVWM_USERDIR]/data/icons/btop.png%" Exec exec xterm -e btop
++ "PulseAudio Volume Control%$[FVWM_USERDIR]/data/icons/multimedia-volume-control.png%" Exec exec pavucontrol
++ "Thunar File Manager%$[FVWM_USERDIR]/data/icons/thunar.png%" Exec exec thunar
++ "Urxvt%$[FVWM_USERDIR]/data/icons/utilities-terminal.png%" Exec exec urxvt
++ "XTerm%$[FVWM_USERDIR]/data/icons/xterm.png%" Exec exec xterm
+
+DestroyMenu "Quit-Verify"
+AddToMenu Quit-Verify   "Really Quit Fvwm?" Title
++ "Yes, Really Quit"  Quit
++ "Restart Fvwm"      Restart
++ ""                  Nop
++ "No, Don't Quit"    Nop
