@@ -20,7 +20,7 @@ blueman-applet &
 picom -b --config "${FVWM_USERDIR}"/applications/picom.conf &
 redshift -c "${FVWM_USERDIR}"/applications/redshift.conf &
 dunst -conf "${FVWM_USERDIR}"/applications/dunst.conf &
-conky -c "${FVWM_USERDIR}"/applications/conky.conf &
+(sleep 5 && conky -c "${FVWM_USERDIR}"/applications/conky.conf &) &
 
 urxvtd -q -o -f &
 
