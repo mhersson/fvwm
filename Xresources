@@ -60,7 +60,7 @@ URxvt.matcher.button: 1
 !XTerm
 Xterm.termName: xterm-256color
 XTerm*internalBorder: 5
-XTerm.vt100.faceName: MesloLGS NF:size=11.5:antialias=true:hinting=true:autohint=true
+XTerm.vt100.faceName: UbuntuMono Nerd Font Mono:size=14:antialias=true:hinting=true:autohint=true
 XTerm*saveLines: 4500
 XTerm*scrollBar: true
 XTerm*rightScrollBar: true
