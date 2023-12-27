@@ -1,12 +1,12 @@
 ######################### General Settings #############################
-IconPath $[FVWM_USERDIR]/data/pixmaps:+
+IconPath $[FVWM_USERDIR]/data:+
 
 # This sets the ClickTime and MoveThreshold used to determine
 # Double Clicks, Hold and Move for the mouse.
 ClickTime 250
 MoveThreshold 3
 
-EdgeResistance 370 100
+EdgeResistance 450 100
 DeskTopSize 2x2
 
 read $[FVWM_USERDIR]/config/style.fvwm2rc
@@ -20,14 +20,14 @@ read $[FVWM_USERDIR]/config/appmenus.fvwm2rc
 
 ################## FvwmButtons button-bar ################################
 *FvwmButtonsFont -adobe-helvetica-bold-r-*-*-18-*-*-*-*-*-*-*
-*FvwmButtonsGeometry 300x100-0-0
+*FvwmButtonsGeometry 400x100-0-0
 *FvwmButtonsRows 1
 
+*FvwmButtons(1x1 Icon "icons/multimedia-volume-control-48x48.png",\
+            Action(mouse 1) "Exec exec pavucontrol", Action(mouse 3) "Exec exec blueman-manager")
 *FvwmButtons(Swallow(UseOld) XClock 'Exec xclock -bg "#820c822382e4" &')
 *FvwmButtons(Swallow(UseOld) XEyes 'Exec xeyes -bg "#820c822382e4" &')
 *FvwmButtons(2x1 Swallow(UseOld) "FvwmPager" "Module FvwmPager 0 0")
-# *FvwmButtons(Swallow(UseOld) XBiff 'Exec xbiff -file /tmp/notifications.log -update 10 -fg "#ed00a8007000" -bg "#820c822382e4" &')
-# *FvwmButtons(Swallow(UseOld,NoKill) "xload" `Exec xload -title xload -update 3 -nolabel -fg "#ed00a8007000" -bg "#820c822382e4" &`)
 
 
 ########################### Pager #########################################
