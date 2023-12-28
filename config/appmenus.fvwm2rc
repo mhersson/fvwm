@@ -24,6 +24,7 @@ AddToMenu "Development" "Development" Title
 DestroyMenu "Internet"
 AddToMenu "Internet" "Internet" Title
 + "Brave%$[FVWM_USERDIR]/data/icons/brave-desktop.png%" Exec exec brave
++ "Hexchat%$[FVWM_USERDIR]/data/icons/hexchat.png%" Exec exec hexchat
 + "Private Internet Access%$[FVWM_USERDIR]/data/icons/piavpn.png%" Exec exec /opt/piavpn/bin/pia-client
 + "Remote Viewer%$[FVWM_USERDIR]/data/icons/virt-viewer.png%" Exec exec remote-viewer
 + "Signal%$[FVWM_USERDIR]/data/icons/signal-desktop.png%" Exec exec signal-desktop
