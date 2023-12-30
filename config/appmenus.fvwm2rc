@@ -1,9 +1,8 @@
 #########################################
 DestroyMenu "FVWM"
 AddToMenu "FVWM" "FVWM" Title
-+ "XTerm%$[FVWM_USERDIR]/data/icons/xterm.png%" Exec exec xterm
-+ "Urxvt%$[FVWM_USERDIR]/data/icons/utilities-terminal.png%" Exec exec urxvtc
 + "Brave%$[FVWM_USERDIR]/data/icons/brave-desktop.png%" Exec exec brave
++ "Alacritty%$[FVWM_USERDIR]/data/icons/utilities-terminal.png%" Exec exec alacritty
 + "Emacs%$[FVWM_USERDIR]/data/icons/emacs.png%" Exec exec emacs
 + "Slack%$[FVWM_USERDIR]/data/icons/slack.png%" Exec exec slack
 + "Signal%$[FVWM_USERDIR]/data/icons/signal-desktop.png%" Exec exec signal-desktop
@@ -39,6 +38,7 @@ AddToMenu "Multimedia" "Multimedia" Title
 
 DestroyMenu "System"
 AddToMenu "System" "System" Title
++ "Alacritty%$[FVWM_USERDIR]/data/icons/utilities-terminal.png%" Exec exec alacritty
 + "Bluetooth Manager%$[FVWM_USERDIR]/data/icons/blueman.png%" Exec exec blueman-manager
 + "Btop++%$[FVWM_USERDIR]/data/icons/btop.png%" Exec exec xterm -e btop
 + "PulseAudio Volume Control%$[FVWM_USERDIR]/data/icons/multimedia-volume-control.png%" Exec exec pavucontrol

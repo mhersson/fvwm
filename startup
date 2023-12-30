@@ -13,15 +13,17 @@ xsetroot -cursor_name left_ptr
 xsetroot -solid "#252525"
 
 /usr/lib/xdg-desktop-portal-gtk &
+# Fedora
+[[ -f /usr/libexec/xdg-desktop-portal-gtk ]] && /usr/libexec/xdg-desktop-portal-gtk &
 
 feh --bg-tile "${FVWM_USERDIR}"/data/pixmaps/backdrops/Ankh.pm
+# Arch
+[[ -f /usr/lib/xdg-desktop-portal-gtk ]] && /usr/lib/xdg-desktop-portal-gtk &
 
 blueman-applet &
 picom -b --config "${FVWM_USERDIR}"/applications/picom.conf &
 redshift -c "${FVWM_USERDIR}"/applications/redshift.conf &
 dunst -conf "${FVWM_USERDIR}"/applications/dunst.conf &
-(sleep 5 && conky -c "${FVWM_USERDIR}"/applications/conky.conf &) &
-
-urxvtd -q -o -f &
+(sleep 10 && conky -c "${FVWM_USERDIR}"/applications/conky.conf &) &
 
 exec fvwm -f "${FVWM_USERDIR}"/config/main.fvwm2rc
